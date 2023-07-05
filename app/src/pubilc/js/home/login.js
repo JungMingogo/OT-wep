@@ -13,7 +13,7 @@ function login (){
     };
 
     fetch("/login", {
-        method : "PSOT",
+        method : "POST",
         headers: {
             "Content-Type": "application/json",
         },
