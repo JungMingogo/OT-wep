@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>로그인 후 이용하세요</title>
     <link rel="stylesheet" href="./logpage.css">
+    <script src="/js/home/login.js" defer></script>
 </head>
 <body>
     <div class="login-page">
@@ -17,8 +18,8 @@
             <p class="message">Already registered? <a href="#">Sign In</a></p>
           </form>
           <form class="login-form">
-            <input type="text" placeholder="아이디를 입력하세요"/>
-            <input type="password" placeholder="비밀번호를 입력하세요"/>
+            <input id = "id" type="text" placeholder="아이디를 입력하세요"/>
+            <input id = "psword" type="password" placeholder="비밀번호를 입력하세요"/>
             <button>login</button>
             <p class="message">회원이 아닌가요? <a href="./register.html">가입하기</a></p>
           </form>
