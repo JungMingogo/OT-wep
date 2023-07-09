@@ -1,0 +1,156 @@
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(144, 206, 182);
+    border-bottom: 2px solid black;
+    padding:  8px 12px;   
+}
+
+
+body{
+    margin: 0;
+    font-family: 'Do Hyeon', sans-serif;
+    font-family: 'Jua', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+#id2, #id3 {
+    text-decoration: underline;
+} 
+
+.navbar__logo{
+    font-size: 28px;
+    color: black;
+    font-weight: 800;
+}
+
+.navbar__logo i {
+    padding: 0px 10px;
+    color: black;
+}
+
+.navbar__menu{
+    font-weight: 600;
+    display: flex;
+    list-style:none;
+    padding-left: 0;
+}
+
+.navbar__menu li{
+    padding: 8px 12px;
+}
+
+.navbar__menu li:hover{
+    border-bottom: 0.5px solid white;
+}
+
+.navbar__log{
+    padding-left: 0px;
+    font-weight: 600;
+    list-style: none;
+    color: black;
+    display: flex;
+}
+
+.navbar__log li{
+    padding: 0px 10px;
+}
+
+.navbar__toggleBtn{
+    display: none; /*일반 사이즈에선 나타나지 않음*/
+    position: absolute; /*소속된 배치와 무관하게 위치 설정*/
+    right: 15px; /*우측에서 32px 거리둠*/
+    font-size: 24px;
+    color: black;
+}
+
+.main_Community{
+    display: block;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: 700;
+    height: 100%;
+    width: 100%;
+    border : 2px solid black;
+    border-radius: 10px;
+}
+
+.main_Community #main_1{
+    font-size: 25px;
+    font-weight: 1000;
+}
+
+.main_Community #main_2 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+@media screen and (max-width:768px){
+
+    .navbar__menu.active,
+    .navbar__log.active{
+        display: flex;
+    }
+
+    .navbar__logo{
+        font-size: 20px;
+        color: black;
+        font-weight: 800;
+    }
+    
+
+    .navbar{
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar__menu{
+        display: none;
+        flex-direction: column;
+        align-items: center; /*메뉴바만 가운데 정렬*/
+        width: 100%; /*메뉴바의 가운데 정렬을 위해 너비를 늘림*/
+    }    
+
+    .navbar__log{
+        display: none;
+        justify-content: center; /*로고는 현재 반대축이므로 justify-content 사용 */
+        width: 100%;
+    }
+
+    .navbar__menu li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar__toggleBtn{
+        padding: 10px;
+        display: flex;
+        margin-top: 20;
+        
+    }
+
+    .main_Community #main_1{
+        font-size: 14px;
+        font-weight: 700;
+        font-weight: 1000;
+    }
+    
+    .main_Community #main_2 {
+        font-size: 12px;
+        font-weight: 400;
+        font-weight: 700;
+    }
+
+
+}
+
+
