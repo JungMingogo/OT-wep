@@ -1,6 +1,6 @@
 "use strict";
 
-const UserSrorage = require("../../models/UserStorage");
+const User = require("../../models/User");
 
 const output = {
     home: (req, res) => {
@@ -25,7 +25,6 @@ const process = {
         const users = UserSrorage.getUser("id", "psword");
 
         const response = {};
-
         if (users.id.includes(id)){
             const idx = users.id.indexOf(id);
             if(users.psword[idx] === psword) {
