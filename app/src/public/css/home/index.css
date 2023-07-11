@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: rgb(144, 206, 182);
-    border-bottom: 2px solid black;
+    background-color: rgb(196, 241, 158);
+    border-bottom: 0.5px solid black;
     padding:  8px 12px;   
 }
 
