@@ -104,6 +104,8 @@
     "utils-merge": "^1.0.1",
     "vary": "^1.1.2",
     "view": "^0.6.1",
+    "winston": "^3.10.0",
+    "winstorm": "^0.0.1-security",
     "xtend": "^4.0.2"
   },
   "scripts": {
